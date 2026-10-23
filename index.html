@@ -4,17 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gustoso — Art of Cakes and Pastry with Love</title>
-  <meta name="description" content="Gustoso is a bakery and restaurant serving pastry with love: art of cakes, tasty pancakes, all-day breakfast and the famous Jibarito sandwich made with fresh ingredients.">
+  <meta name="description" content="Gustoso is a bakery and restaurant serving pastry with love: art of cakes, tasty pancakes, all-day breakfast and the famous Jibarito sandwich.">
+  
+  <link rel="canonical" href="https://kozhurina.github.io/gustoso/">
+  
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';">
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="Gustoso — Art of Cakes and Pastry with Love">
   <meta property="og:description" content="Fresh ingredients every day: art of cakes, tasty pancakes, breakfast and the Jibarito sandwich.">
-  <meta property="og:image" content="img/hero.jpg">
+  <meta property="og:image" content="https://kozhurina.github.io/gustoso/img/hero.jpg">
+  <meta property="og:url" content="https://kozhurina.github.io/gustoso/">
+  <meta property="og:site_name" content="Gustoso">
   <meta property="og:locale" content="en_US">
+
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&amp;family=Great+Vibes&amp;family=Mulish:wght@400;600&amp;family=Playfair+Display:wght@700&amp;display=swap">
+  
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preload" as="image" href="img/hero.jpg">
 </head>
 <body>
 
@@ -35,8 +46,8 @@
         <ul class="nav__list" id="primary-menu">
           <li class="nav__item"><a class="nav__link" href="#welcome">Welcome</a></li>
           <li class="nav__item"><a class="nav__link" href="#menu">Menu</a></li>
-          <li class="nav__item"><a class="nav__link" href="#breakfast">Reservations</a></li>
-          <li class="nav__item"><a class="nav__link" href="#about">News</a></li>
+          <li class="nav__item"><a class="nav__link" href="#reservations">Reservations</a></li>
+          <li class="nav__item"><a class="nav__link" href="#news">News</a></li>
           <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
         </ul>
 
@@ -79,7 +90,7 @@
   </header>
 
   <main>
-    <section class="cakes" id="about">
+    <section class="cakes" id="news">
       <div class="cakes__inner">
         <div class="cakes__text">
           <h2 class="section-title">Art of cakes</h2>
@@ -89,7 +100,7 @@
           <p class="cakes__chef">Chef Cook</p>
           <div class="chef">
             <span class="chef__name">Benito</span>
-            <img class="chef__photo" src="img/chef.png" alt="Gustoso chef cook Benito" width="116" height="116">
+            <img class="chef__photo" src="img/chef.png" alt="Gustoso chef cook Benito" width="116" height="116" loading="lazy" decoding="async">
             <span class="chef__name">Gaspare</span>
           </div>
 
@@ -101,16 +112,16 @@
         <div class="cakes__gallery">
           <div class="collage">
             <figure class="collage__item">
-              <img class="collage__img" src="img/cake-flour.jpg" alt="Wheat flour in a wooden scoop" width="323" height="282">
+              <img class="collage__img" src="img/cake-flour.jpg" alt="Wheat flour in a wooden scoop" width="323" height="282" loading="lazy" decoding="async">
             </figure>
             <figure class="collage__item">
-              <img class="collage__img" src="img/cake-egg.jpg" alt="Fresh egg and cream for the cake dough" width="323" height="282">
+              <img class="collage__img" src="img/cake-egg.jpg" alt="Fresh egg and cream for the cake dough" width="323" height="282" loading="lazy" decoding="async">
             </figure>
             <figure class="collage__item">
-              <img class="collage__img" src="img/cake-cake.jpg" alt="Chocolate layer cake with buttercream" width="323" height="282">
+              <img class="collage__img" src="img/cake-cake.jpg" alt="Chocolate layer cake with buttercream" width="323" height="282" loading="lazy" decoding="async">
             </figure>
             <figure class="collage__item">
-              <img class="collage__img" src="img/cake-berries.jpg" alt="Strawberry and chocolate desserts" width="323" height="282">
+              <img class="collage__img" src="img/cake-berries.jpg" alt="Strawberry and chocolate desserts" width="323" height="282" loading="lazy" decoding="async">
             </figure>
             <p class="collage__caption">Tastes so good!</p>
           </div>
@@ -121,7 +132,7 @@
     <section class="pancakes" id="menu">
       <div class="pancakes__inner">
         <figure class="pancakes__photo">
-          <img class="pancakes__img" src="img/pancakes-photo.jpg" alt="Stack of pancakes with berry syrup and blueberries" width="660" height="614">
+          <img class="pancakes__img" src="img/pancakes-photo.jpg" alt="Stack of pancakes with berry syrup and blueberries" width="660" height="614" loading="lazy" decoding="async">
           <div class="rating" role="group" aria-label="Rate the pancakes">
             <button class="rating__star" type="button" data-value="1" aria-label="1 of 5 stars">&#9733;</button>
             <button class="rating__star" type="button" data-value="2" aria-label="2 of 5 stars">&#9733;</button>
@@ -149,21 +160,21 @@
               <span aria-hidden="true">&#8249;</span>
             </button>
             <ul class="carousel__list">
-              <li class="carousel__item"><img src="img/thumb-lemon.png" alt="Lemon pancake" width="180" height="185"></li>
-              <li class="carousel__item"><img src="img/thumb-berries.png" alt="Berry pancake" width="180" height="185"></li>
-              <li class="carousel__item"><img src="img/thumb-ham.png" alt="Ham pancake" width="180" height="185"></li>
+              <li class="carousel__item"><img src="img/thumb-lemon.png" alt="Lemon pancake" width="180" height="185" loading="lazy" decoding="async"></li>
+              <li class="carousel__item"><img src="img/thumb-berries.png" alt="Berry pancake" width="180" height="185" loading="lazy" decoding="async"></li>
+              <li class="carousel__item"><img src="img/thumb-ham.png" alt="Ham pancake" width="180" height="185" loading="lazy" decoding="async"></li>
             </ul>
             <button class="carousel__arrow" type="button" data-dir="next" aria-label="Next pancake">
               <span aria-hidden="true">&#8250;</span>
             </button>
           </div>
 
-          <img class="pancakes__windmill" src="img/windmill.png" alt="" width="323" height="361">
+          <img class="pancakes__windmill" src="img/windmill.png" alt="" width="323" height="361" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
 
-    <section class="breakfast" id="breakfast">
+    <section class="breakfast" id="reservations">
       <div class="breakfast__inner">
         <div class="breakfast__menu">
           <h2 class="breakfast__title">Breakfast</h2>
@@ -177,7 +188,7 @@
             </li>
             <li class="menu-list__item">
               <span class="menu-list__ornament" aria-hidden="true">
-                <img src="img/wheat-crown.png" alt="" width="692" height="185">
+                <img src="img/wheat-crown.png" alt="" width="692" height="185" loading="lazy" decoding="async">
               </span>
               <h3 class="menu-list__name">Toast &amp; Jam</h3>
               <p class="menu-list__desc">Suspendisse, tempus, nterdum</p>
@@ -185,7 +196,7 @@
             </li>
             <li class="menu-list__item">
               <span class="menu-list__ornament" aria-hidden="true">
-                <img src="img/wheat-crown.png" alt="" width="692" height="185">
+                <img src="img/wheat-crown.png" alt="" width="692" height="185" loading="lazy" decoding="async">
               </span>
               <h3 class="menu-list__name">Muffins</h3>
               <p class="menu-list__desc">Fusce eget dui sodales est</p>
@@ -199,13 +210,13 @@
             <p class="card__est"><span>Est.</span> <span>1893</span></p>
             <div class="card__ornament">
               <span class="card__ornament-disc">
-                <img class="card__ornament-icon" src="img/pretzel-icon.png" alt="" width="52" height="52">
+                <img class="card__ornament-icon" src="img/pretzel-icon.png" alt="" width="52" height="52" loading="lazy" decoding="async">
               </span>
             </div>
             <h3 class="card__title">Your morning Escape with Flair</h3>
             <p class="card__text">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
             <button class="btn btn--outline js-modal" type="button">Read</button>
-            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219">
+            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219" loading="lazy" decoding="async">
             <span class="card__fold" aria-hidden="true"></span>
           </article>
 
@@ -213,13 +224,13 @@
             <p class="card__est"><span>Est.</span> <span>1893</span></p>
             <div class="card__ornament">
               <span class="card__ornament-disc">
-                <img class="card__ornament-icon" src="img/grape-icon.png" alt="" width="41" height="41">
+                <img class="card__ornament-icon" src="img/grape-icon.png" alt="" width="41" height="41" loading="lazy" decoding="async">
               </span>
             </div>
             <h3 class="card__title">Fresh pastry every morning</h3>
             <p class="card__text">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui etiam rhoncus.</p>
             <button class="btn btn--outline js-modal" type="button">Read</button>
-            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219">
+            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219" loading="lazy" decoding="async">
             <span class="card__fold" aria-hidden="true"></span>
           </article>
 
@@ -227,13 +238,13 @@
             <p class="card__est"><span>Est.</span> <span>1893</span></p>
             <div class="card__ornament">
               <span class="card__ornament-disc">
-                <img class="card__ornament-icon" src="img/grape-icon.png" alt="" width="41" height="41">
+                <img class="card__ornament-icon" src="img/grape-icon.png" alt="" width="41" height="41" loading="lazy" decoding="async">
               </span>
             </div>
             <h3 class="card__title">Sweet start with coffee</h3>
             <p class="card__text">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
             <button class="btn btn--outline js-modal" type="button">Read</button>
-            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219">
+            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219" loading="lazy" decoding="async">
             <span class="card__fold" aria-hidden="true"></span>
           </article>
 
@@ -248,7 +259,7 @@
     <section class="sandwich" id="recipe">
       <div class="sandwich__inner">
         <header class="sandwich__header">
-          <img class="sandwich__windmill" src="img/windmill-small.png" alt="" width="108" height="123">
+          <img class="sandwich__windmill" src="img/windmill-small.png" alt="" width="108" height="123" loading="lazy" decoding="async">
           <h2 class="sandwich__title">The Jibarito sandwich</h2>
           <p class="sandwich__subtitle">The best sandwich you&rsquo;ve ever tasted!</p>
         </header>
@@ -256,17 +267,17 @@
         <div class="sandwich__body">
           <ul class="features">
             <li class="features__item">
-              <img class="features__img" src="img/feature-wheat.png" alt="Golden wheat grains" width="118" height="119">
+              <img class="features__img" src="img/feature-wheat.png" alt="Golden wheat grains" width="118" height="119" loading="lazy" decoding="async">
               <h3 class="features__name">Class aptent</h3>
               <p class="features__text">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
             </li>
             <li class="features__item">
-              <img class="features__img" src="img/feature-eggs.png" alt="Farm eggs in a basket" width="118" height="119">
+              <img class="features__img" src="img/feature-eggs.png" alt="Farm eggs in a basket" width="118" height="119" loading="lazy" decoding="async">
               <h3 class="features__name">Nulla eget</h3>
               <p class="features__text">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
             </li>
             <li class="features__item">
-              <img class="features__img" src="img/feature-cheese.png" alt="Fresh cream cheese with herbs" width="118" height="119">
+              <img class="features__img" src="img/feature-cheese.png" alt="Fresh cream cheese with herbs" width="118" height="119" loading="lazy" decoding="async">
               <h3 class="features__name">Sed nibh purus</h3>
               <p class="features__text">Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
             </li>
@@ -274,7 +285,7 @@
 
           <div class="sandwich__media">
             <figure class="sandwich__figure">
-              <img class="sandwich__img" src="img/sandwich.jpg" alt="The Jibarito sandwich with ham and lettuce" width="858" height="575">
+              <img class="sandwich__img" src="img/sandwich.jpg" alt="The Jibarito sandwich with ham and lettuce" width="858" height="575" loading="lazy" decoding="async">
             </figure>
 
             <div class="stats">
@@ -307,22 +318,30 @@
       <nav class="footer__nav" aria-label="Footer navigation, first column">
         <ul class="footer__list">
           <li class="footer__item"><a class="footer__link" href="#menu">Our menu</a></li>
-          <li class="footer__item"><a class="footer__link" href="#about">Gallery</a></li>
-          <li class="footer__item"><a class="footer__link" href="#about">Culture</a></li>
+          <li class="footer__item"><a class="footer__link" href="#news">Gallery</a></li>
+          <li class="footer__item"><a class="footer__link" href="#news">Culture</a></li>
         </ul>
       </nav>
 
       <a class="footer__logo" href="#welcome">
-        <img src="img/gustoso-dark.png" alt="Gustoso logo" width="140" height="44">
+        <img src="img/gustoso-dark.png" alt="Gustoso logo" width="140" height="44" loading="lazy" decoding="async">
       </a>
 
       <nav class="footer__nav" aria-label="Footer navigation, second column">
         <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="#breakfast">Events</a></li>
-          <li class="footer__item"><a class="footer__link" href="#breakfast">Catering</a></li>
+          <li class="footer__item"><a class="footer__link" href="#reservations">Events</a></li>
+          <li class="footer__item"><a class="footer__link" href="#reservations">Catering</a></li>
           <li class="footer__item"><a class="footer__link" href="#contacts">Visit us</a></li>
         </ul>
       </nav>
+    </div>
+    
+    <div class="footer__address-wrapper">
+      <address class="footer__address">
+        <strong>Gustoso Bakery & Restaurant</strong><br>
+        123 Example Street, City<br>
+        <a href="tel:+10000000000">+1 (000) 000-00-00</a>
+      </address>
     </div>
   </footer>
 
@@ -337,12 +356,27 @@
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "Gustoso",
+    "image": "https://kozhurina.github.io/gustoso/img/hero.jpg",
+    "url": "https://kozhurina.github.io/gustoso/",
+    "telephone": "+10000000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Example Street",
+      "addressLocality": "City",
+      "postalCode": "00000",
+      "addressCountry": "US"
+    },
     "servesCuisine": "Bakery, breakfast, sandwiches",
     "priceRange": "$",
     "openingHours": "Mo-Su 07:00-22:00",
-    "hasMenu": "#menu"
+    "hasMenu": "https://kozhurina.github.io/gustoso/#menu",
+    "sameAs": [
+      "https://twitter.com/",
+      "https://www.facebook.com/",
+      "https://www.instagram.com/"
+    ]
   }
   </script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
