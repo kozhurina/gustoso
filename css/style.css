@@ -1374,8 +1374,11 @@ blockquote {
 }
 
 .footer__address-wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 40px auto 0;
+  padding: 0 30px;
   text-align: center;
-  margin-top: 40px;
 }
 
 .footer__address {
@@ -1989,6 +1992,8 @@ blockquote {
   .footer__item + .footer__item::before {
     margin: 0 10px;
   }
+  .footer__address-wrapper {
+    padding: 0 20px;
 }
 
 @media (max-width: 520px) {
