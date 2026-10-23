@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gustoso — Art of Cakes and Pastry with Love</title>
+  <meta name="description" content="Gustoso is a bakery and restaurant serving pastry with love: art of cakes, tasty pancakes, all-day breakfast and the famous Jibarito sandwich made with fresh ingredients.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gustoso — Art of Cakes and Pastry with Love">
+  <meta property="og:description" content="Fresh ingredients every day: art of cakes, tasty pancakes, breakfast and the Jibarito sandwich.">
+  <meta property="og:image" content="img/hero.jpg">
+  <meta property="og:locale" content="en_US">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&amp;family=Great+Vibes&amp;family=Mulish:wght@400;600&amp;family=Playfair+Display:wght@700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="hero" id="welcome">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a class="nav__logo" href="#welcome">
+          <img src="img/gustoso.png" alt="Gustoso bakery and restaurant logo" width="140" height="44">
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-text">Menu</span>
+        </button>
+
+        <ul class="nav__list" id="primary-menu">
+          <li class="nav__item"><a class="nav__link" href="#welcome">Welcome</a></li>
+          <li class="nav__item"><a class="nav__link" href="#menu">Menu</a></li>
+          <li class="nav__item"><a class="nav__link" href="#breakfast">Reservations</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">News</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
+        </ul>
+
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Gustoso on Twitter">
+              <img src="img/twitter.png" alt="Twitter" width="16" height="13">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Gustoso on Facebook">
+              <img src="img/facebook.png" alt="Facebook" width="8" height="15">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Gustoso on Instagram">
+              <img src="img/instagram.png" alt="Instagram" width="14" height="16">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero__body">
+      <h1 class="hero__title">Pastry with love</h1>
+      <svg class="hero__wave" width="193" height="14" viewBox="0 0 193 14" aria-hidden="true" focusable="false">
+        <path d="M0 7 Q 12 0 24 7 T 48 7 T 72 7 T 96 7 T 120 7 T 144 7 T 168 7 T 192 7" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 5" stroke-linecap="round"></path>
+      </svg>
+      <p class="hero__subtitle">We&rsquo;re bringing you fresh ingredients every day in ways you can&rsquo;t resist.</p>
+      <a class="btn btn--ghost" href="#menu">Our menu</a>
+    </div>
+
+    <div class="hero__seam">
+      <span class="hero__badge" aria-hidden="true">
+        <span class="hero__badge-disc">
+          <img class="hero__badge-icon" src="img/badge-bread.png" alt="" width="50" height="45">
+        </span>
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <section class="cakes" id="about">
+      <div class="cakes__inner">
+        <div class="cakes__text">
+          <h2 class="section-title">Art of cakes</h2>
+          <p class="section-subtitle">We create delicious memories</p>
+          <p class="cakes__desc">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+
+          <p class="cakes__chef">Chef Cook</p>
+          <div class="chef">
+            <span class="chef__name">Benito</span>
+            <img class="chef__photo" src="img/chef.png" alt="Gustoso chef cook Benito" width="116" height="116">
+            <span class="chef__name">Gaspare</span>
+          </div>
+
+          <blockquote class="quote">
+            <p class="quote__text">Unique creations for unique occasions.</p>
+          </blockquote>
+        </div>
+
+        <div class="cakes__gallery">
+          <div class="collage">
+            <figure class="collage__item">
+              <img class="collage__img" src="img/cake-flour.jpg" alt="Wheat flour in a wooden scoop" width="323" height="282">
+            </figure>
+            <figure class="collage__item">
+              <img class="collage__img" src="img/cake-egg.jpg" alt="Fresh egg and cream for the cake dough" width="323" height="282">
+            </figure>
+            <figure class="collage__item">
+              <img class="collage__img" src="img/cake-cake.jpg" alt="Chocolate layer cake with buttercream" width="323" height="282">
+            </figure>
+            <figure class="collage__item">
+              <img class="collage__img" src="img/cake-berries.jpg" alt="Strawberry and chocolate desserts" width="323" height="282">
+            </figure>
+            <p class="collage__caption">Tastes so good!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pancakes" id="menu">
+      <div class="pancakes__inner">
+        <figure class="pancakes__photo">
+          <img class="pancakes__img" src="img/pancakes-photo.jpg" alt="Stack of pancakes with berry syrup and blueberries" width="660" height="614">
+          <div class="rating" role="group" aria-label="Rate the pancakes">
+            <button class="rating__star" type="button" data-value="1" aria-label="1 of 5 stars">&#9733;</button>
+            <button class="rating__star" type="button" data-value="2" aria-label="2 of 5 stars">&#9733;</button>
+            <button class="rating__star" type="button" data-value="3" aria-label="3 of 5 stars">&#9733;</button>
+            <button class="rating__star" type="button" data-value="4" aria-label="4 of 5 stars">&#9733;</button>
+            <button class="rating__star" type="button" data-value="5" aria-label="5 of 5 stars">&#9733;</button>
+          </div>
+        </figure>
+
+        <div class="pancakes__card">
+          <span class="pancakes__pause" aria-hidden="true"></span>
+
+          <div class="widget">
+            <span class="widget__label">Ready in</span>
+            <span class="widget__value">40</span>
+            <span class="widget__unit">mins</span>
+          </div>
+
+          <h2 class="pancakes__title">Tasty pancakes</h2>
+          <p class="pancakes__subtitle">Season favourite</p>
+          <p class="pancakes__desc">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+
+          <div class="carousel">
+            <button class="carousel__arrow" type="button" data-dir="prev" aria-label="Previous pancake">
+              <span aria-hidden="true">&#8249;</span>
+            </button>
+            <ul class="carousel__list">
+              <li class="carousel__item"><img src="img/thumb-lemon.png" alt="Lemon pancake" width="180" height="185"></li>
+              <li class="carousel__item"><img src="img/thumb-berries.png" alt="Berry pancake" width="180" height="185"></li>
+              <li class="carousel__item"><img src="img/thumb-ham.png" alt="Ham pancake" width="180" height="185"></li>
+            </ul>
+            <button class="carousel__arrow" type="button" data-dir="next" aria-label="Next pancake">
+              <span aria-hidden="true">&#8250;</span>
+            </button>
+          </div>
+
+          <img class="pancakes__windmill" src="img/windmill.png" alt="" width="323" height="361">
+        </div>
+      </div>
+    </section>
+
+    <section class="breakfast" id="breakfast">
+      <div class="breakfast__inner">
+        <div class="breakfast__menu">
+          <h2 class="breakfast__title">Breakfast</h2>
+          <p class="breakfast__subtitle">7am breakfast? we&rsquo;re open!</p>
+
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <h3 class="menu-list__name">Full breakfast</h3>
+              <p class="menu-list__desc">Duis ut tortor, et risus, vulputate pretium</p>
+              <span class="menu-list__price">$12.49</span>
+            </li>
+            <li class="menu-list__item">
+              <span class="menu-list__ornament" aria-hidden="true">
+                <img src="img/wheat-crown.png" alt="" width="692" height="185">
+              </span>
+              <h3 class="menu-list__name">Toast &amp; Jam</h3>
+              <p class="menu-list__desc">Suspendisse, tempus, nterdum</p>
+              <span class="menu-list__price">$4.90</span>
+            </li>
+            <li class="menu-list__item">
+              <span class="menu-list__ornament" aria-hidden="true">
+                <img src="img/wheat-crown.png" alt="" width="692" height="185">
+              </span>
+              <h3 class="menu-list__name">Muffins</h3>
+              <p class="menu-list__desc">Fusce eget dui sodales est</p>
+              <span class="menu-list__price">$3.95</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-pos="0">
+            <p class="card__est"><span>Est.</span> <span>1893</span></p>
+            <div class="card__ornament">
+              <span class="card__ornament-disc">
+                <img class="card__ornament-icon" src="img/pretzel-icon.png" alt="" width="52" height="52">
+              </span>
+            </div>
+            <h3 class="card__title">Your morning Escape with Flair</h3>
+            <p class="card__text">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+            <button class="btn btn--outline js-modal" type="button">Read</button>
+            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219">
+            <span class="card__fold" aria-hidden="true"></span>
+          </article>
+
+          <article class="card" data-pos="1">
+            <p class="card__est"><span>Est.</span> <span>1893</span></p>
+            <div class="card__ornament">
+              <span class="card__ornament-disc">
+                <img class="card__ornament-icon" src="img/grape-icon.png" alt="" width="41" height="41">
+              </span>
+            </div>
+            <h3 class="card__title">Fresh pastry every morning</h3>
+            <p class="card__text">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui etiam rhoncus.</p>
+            <button class="btn btn--outline js-modal" type="button">Read</button>
+            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219">
+            <span class="card__fold" aria-hidden="true"></span>
+          </article>
+
+          <article class="card" data-pos="2">
+            <p class="card__est"><span>Est.</span> <span>1893</span></p>
+            <div class="card__ornament">
+              <span class="card__ornament-disc">
+                <img class="card__ornament-icon" src="img/grape-icon.png" alt="" width="41" height="41">
+              </span>
+            </div>
+            <h3 class="card__title">Sweet start with coffee</h3>
+            <p class="card__text">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+            <button class="btn btn--outline js-modal" type="button">Read</button>
+            <img class="card__wheat" src="img/wheat-decor.png" alt="" width="353" height="219">
+            <span class="card__fold" aria-hidden="true"></span>
+          </article>
+
+          <div class="cards__nav">
+            <button class="cards__arrow" type="button" data-cards="prev" aria-label="Previous card">&#8249;</button>
+            <button class="cards__arrow" type="button" data-cards="next" aria-label="Next card">&#8250;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sandwich" id="recipe">
+      <div class="sandwich__inner">
+        <header class="sandwich__header">
+          <img class="sandwich__windmill" src="img/windmill-small.png" alt="" width="108" height="123">
+          <h2 class="sandwich__title">The Jibarito sandwich</h2>
+          <p class="sandwich__subtitle">The best sandwich you&rsquo;ve ever tasted!</p>
+        </header>
+
+        <div class="sandwich__body">
+          <ul class="features">
+            <li class="features__item">
+              <img class="features__img" src="img/feature-wheat.png" alt="Golden wheat grains" width="118" height="119">
+              <h3 class="features__name">Class aptent</h3>
+              <p class="features__text">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
+            </li>
+            <li class="features__item">
+              <img class="features__img" src="img/feature-eggs.png" alt="Farm eggs in a basket" width="118" height="119">
+              <h3 class="features__name">Nulla eget</h3>
+              <p class="features__text">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
+            </li>
+            <li class="features__item">
+              <img class="features__img" src="img/feature-cheese.png" alt="Fresh cream cheese with herbs" width="118" height="119">
+              <h3 class="features__name">Sed nibh purus</h3>
+              <p class="features__text">Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
+            </li>
+          </ul>
+
+          <div class="sandwich__media">
+            <figure class="sandwich__figure">
+              <img class="sandwich__img" src="img/sandwich.jpg" alt="The Jibarito sandwich with ham and lettuce" width="858" height="575">
+            </figure>
+
+            <div class="stats">
+              <div class="stats__row">
+                <span class="stats__label">Prep</span>
+                <span class="stats__value">15</span>
+                <span class="stats__unit">mins</span>
+              </div>
+              <div class="stats__row">
+                <span class="stats__label">Cook</span>
+                <span class="stats__value">35</span>
+                <span class="stats__unit">mins</span>
+              </div>
+              <div class="stats__row stats__ready">
+                <span class="stats__label">Ready in</span>
+                <span class="stats__value">50</span>
+                <span class="stats__unit">mins</span>
+              </div>
+            </div>
+
+            <button class="btn btn--recipe js-modal" type="button">Full recipe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="footer__inner">
+      <nav class="footer__nav" aria-label="Footer navigation, first column">
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#menu">Our menu</a></li>
+          <li class="footer__item"><a class="footer__link" href="#about">Gallery</a></li>
+          <li class="footer__item"><a class="footer__link" href="#about">Culture</a></li>
+        </ul>
+      </nav>
+
+      <a class="footer__logo" href="#welcome">
+        <img src="img/gustoso-dark.png" alt="Gustoso logo" width="140" height="44">
+      </a>
+
+      <nav class="footer__nav" aria-label="Footer navigation, second column">
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#breakfast">Events</a></li>
+          <li class="footer__item"><a class="footer__link" href="#breakfast">Catering</a></li>
+          <li class="footer__item"><a class="footer__link" href="#contacts">Visit us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="recipe-modal" aria-labelledby="recipe-title">
+    <h2 class="modal__title" id="recipe-title">Gustoso recipe book</h2>
+    <p class="modal__text">Our bakers start before sunrise: sourdough bread, butter croissants, pancakes with berry syrup and the Jibarito sandwich with ham, lettuce and cream cheese. Ask our chef for the full recipe card at the counter.</p>
+    <button class="modal__close btn btn--outline" type="button">Close</button>
+  </dialog>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Gustoso",
+    "servesCuisine": "Bakery, breakfast, sandwiches",
+    "priceRange": "$",
+    "openingHours": "Mo-Su 07:00-22:00",
+    "hasMenu": "#menu"
+  }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
